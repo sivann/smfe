@@ -1,18 +1,15 @@
-S.M.F.E. Simple M.A.M.E. Frontend **S.M.F.E.  
-Simple M.A.M.E. Frontend**
-
-![a palm tree](../images/palmtree.gif "a palm tree")
+# S.M.F.E. Simple M.A.M.E. Frontend 
 
 Quote from pugsy's site: _"My current MAME frontend of choice, fully featured and requires no installation at all, just run the exe (so it even works with MAME straight off a dvdr with very little work). And it hasn't crashed once!"_ :-)
+
 
 |     |     |
 | --- | --- |
 | **Download** |     |
-| **Binary:** | • [smfe.exe](smfe.exe) \[2.8MB\] or [smfe12.rar](smfe12.rar) \[0.8Mb\] Version 0.12, (26/Jun/2005), tested with **MAME 0.97b**  <br>• you may optionally get [smfe_data.rar](smfe_data.rar) \[0.9MB\] if you have trouble creating your own. |
+| **Binary:** | • [smfe.exe](smfe.exe) \[2.8MB\]  \[0.8Mb\] Version 0.12, (26/Jun/2005), tested with **MAME 0.97b**  <br>• you may optionally get [smfe_data.dat](smfe_data.dat) \[0.9MB\] if you have trouble creating your own. |
 | **Info:** | • No installation needed, just run smfe.exe. You must also have mame.exe (or mamepp.exe).  <br>• Check "Help->Getting Started" on how to read game data et.c  <br>• You can sort the table by multiple columns with shift+clicking on their headers  <br>• smfe creates smfe_data.dat which contains all displayed table information, and smfe.ini which contains saved options  <br>• **You must remove the old .dat file when you change smfe versions**  <br>• If mame.exe can find MAMEINFO.dat, it will use it and smfe will display recommended games. |
-| **Sources:** | You can get the sources (v0.9) [smfe09-src.rar](smfe09-src.rar). To compile it you will need Borland C++ Builder, Russian Extensions (RX), ADVStringGrid. |
+| **Sources:** | To compile it you will need Borland C++ Builder, Russian Extensions (RX), ADVStringGrid. |
 | **Misc:** | A shell script (for unix) [getrom](getrom) to download a rom from www.mame.dk. Usage: "getrom &lt;romname&gt;". If you don't have the "[socket](http://home.snafu.de/jn/socket/)" program, use [netcat.](http://www.atstake.com/research/tools/index.html#network_utilities)**Update:** www.mame.dk has shut down. |
-| **Old Binaries** | • [smfe11.rar](smfe11.rar) \[818Kb\] for MAME 0.83  <br>• [smfe09.rar](smfe09.rar) \[818Kb\] Version 0.9, (30/Sep/2004), tested with **MAME 0.83**  <br>• [smfe07.zip](smfe07.zip) version 0.7 (2/Sep/2002), for **MAME 0.61** |
 
 |     |
 | --- |
@@ -30,4 +27,3 @@ Quote from pugsy's site: _"My current MAME frontend of choice, fully featured an
   
 
   
-Back to my [homepage](http://www.softlab.ece.ntua.gr/~sivann/)
