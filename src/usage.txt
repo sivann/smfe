@@ -1,0 +1,189 @@
+http://www.mame.net/readmewin.html
+
+Usage: mamepp [game] [options]
+Options:
+
+*** Frontend Related ***
+-help / -h                     show help message                               
+-?                             show help message                               
+-list / -ls                    List supported games matching gamename, or all, 
+                               gamename may contain * and ? wildcards          
+-listfull / -ll                short name, full name                           
+-listgames                     year, manufacturer and full name                
+-listdetails                   detailed info                                   
+-gamelist                      output gamelist.txt main body                   
+-listsourcefile                driver sourcefile                               
+-listgamespersourcefile        games per sourcefile                            
+-listinfo / -li                all available info on driver                    
+-listxml / -lx                 all available info on driver in XML format      
+-listclones / -lc              show clones                                     
+-listsamdir                    shared sample directory                         
+-listcrc                       CRC-32s                                         
+-listsha1                      SHA-1s                                          
+-listmd5                       MD5s                                            
+-listdupcrc                    duplicate crc's                                 
+-listwrongmerge / -lwm         wrong merge attempts                            
+-listromsize                   rom size                                        
+-listromdistribution           rom distribution                                
+-listromnumber                 rom size                                        
+-listpalettesize / -lps        palette size                                    
+-listcpu                       cpu's used                                      
+-listcpuclass                  class of cpu's used by year                     
+-listnosound                   drivers missing sound support                   
+-listsound                     sound chips used                                
+-listnvram                     games with nvram                                
+-wrongorientation              wrong orientation                               
+-wrongfps                      wrong fps                                       
+-[no]clones                    enable/disable clones                           
+-listroms                      list required roms for a driver                 
+-listsamples                   list optional samples for a driver              
+-verifyroms                    report romsets that have problems               
+-verifysets                    verify checksums of romsets (terse)             
+-vset                          verify checksums of a romset (verbose)          
+-verifysamples                 report samplesets that have problems            
+-vsam                          verify a sampleset                              
+-romident                      compare files with known MAME roms              
+-isknown                       compare files with known MAME roms (brief)      
+-sortname                      sort by descriptive name                        
+-sortdriver                    sort by driver                                  
+
+*** Windows path and directory options ***
+-rompath / -rp <string>        path to romsets                                 
+-samplepath / -sp <string>     path to samplesets                              
+-inipath <string>              path to ini files                               
+-cfg_directory <string>        directory to save configurations                
+-nvram_directory <string>      directory to save nvram contents                
+-memcard_directory <string>    directory to save memory card contents          
+-input_directory <string>      directory to save input device logs             
+-hiscore_directory <string>    directory to save hiscores                      
+-state_directory <string>      directory to save states                        
+-artwork_directory <string>    directory for Artwork (Overlays etc.)           
+-snapshot_directory <string>   directory for screenshots (.png format)         
+-diff_directory <string>       directory for hard drive image difference files 
+-ctrlr_directory <string>      directory to save controller definitions        
+-cheat_file <string>           cheat filename                                  
+-history_file <string>         no help available                               
+-mameinfo_file <string>        no help available                               
+
+*** Windows video options ***
+-[no]autoframeskip / -[no]afs  skip frames to speed up emulation               
+-frameskip / -fs <int>         set frameskip explicitly (autoframeskip needs   
+                               to be off)                                      
+-[no]waitvsync                 wait for vertical sync (reduces tearing)        
+-[no]triplebuffer / -[no]tb    triple buffering (only if fullscreen)           
+-[no]window / -[no]w           run in a window/run on full screen              
+-[no]ddraw / -[no]dd           use DirectDraw for rendering                    
+-[no]direct3d / -[no]d3d       use Direct3D for rendering                      
+-[no]hwstretch / -[no]hws      (dd) stretch video using the hardware           
+-cleanstretch / -cs <string>   stretch to integer ratios                       
+-resolution / -r <string>      set resolution                                  
+-zoom / -z <int>               force specific zoom level                       
+-refresh <int>                 set specific monitor refresh rate               
+-[no]scanlines / -[no]sl       emulate win_old_scanlines                       
+-[no]switchres                 switch resolutions to best fit                  
+-[no]switchbpp                 switch color depths to best fit                 
+-[no]maximize / -[no]max       start out maximized                             
+-[no]keepaspect / -[no]ka      enforce aspect ratio                            
+-[no]matchrefresh              attempt to match the game's refresh rate        
+-[no]syncrefresh               syncronize only to the monitor refresh          
+-[no]throttle                  throttle speed to the game's framerate          
+-full_screen_brightness / -fsb sets the brightness in full screen mode         
+<float>                                                                        
+-frames_to_run / -ftr <int>    sets the number of frames to run within the     
+                               game                                            
+-effect <string>               specify the blitting effect                     
+-screen_aspect <string>        specify an alternate monitor aspect ratio       
+-[no]sleep                     allow MAME to give back time to the system when 
+                               it's not needed                                 
+-[no]rdtsc                     prefer RDTSC over QueryPerformanceCounter for   
+                               timing                                          
+-[no]high_priority             increase thread priority                        
+
+*** Windows Direct3D 2D video options ***
+-[no]d3dtexmanage              use DirectX texture management                  
+-d3dfilter / -flt <int>        interpolation method                            
+-d3dfeedback <int>             feedback strength                               
+-d3dscan <int>                 scanline intensity                              
+-[no]d3deffectrotate           enable rotation of effects for rotated games    
+-d3dprescale <string>          prescale effect                                 
+-d3deffect <string>            specify the blitting effects                    
+-d3dcustom <string>            customised blitting effects preset              
+-d3dexpert <string>            additional customised settings (undocumented)   
+
+*** Windows sound options ***
+-audio_latency <int>           set audio latency (increase to reduce glitches) 
+
+*** Input device options ***
+-[no]mouse                     enable mouse input                              
+-[no]joystick / -[no]joy       enable joystick input                           
+-[no]lightgun / -[no]gun       enable lightgun input                           
+-[no]dual_lightgun / -[no]dual enable dual lightgun input                      
+-[no]offscreen_reload /        offscreen shots reload                          
+-[no]reload                                                                    
+-[no]steadykey / -[no]steady   enable steadykey support                        
+-[no]keyboard_leds / -[no]leds enable keyboard LED emulation                   
+-led_mode <string>             LED mode (ps/2|usb)                             
+-a2d_deadzone / -a2d <float>   minimal analog value for digital input          
+-ctrlr <string>                preconfigure for specified controller           
+
+*** Mame CORE video options ***
+-[no]norotate                  do not apply rotation                           
+-[no]ror                       rotate screen clockwise                         
+-[no]rol                       rotate screen anti-clockwise                    
+-[no]autoror                   automatically rotate screen clockwise for       
+                               vertical games                                  
+-[no]autorol                   automatically rotate screen anti-clockwise for  
+                               vertical games                                  
+-[no]flipx                     flip screen upside-down                         
+-[no]flipy                     flip screen left-right                          
+-debug_resolution / -dr        set resolution for debugger window              
+<string>                                                                       
+-gamma <float>                 gamma correction                                
+-brightness / -bright <float>  brightness correction                           
+-pause_brightness <float>      additional pause brightness                     
+
+*** Mame CORE vector game options ***
+-[no]antialias / -[no]aa       draw antialiased vectors                        
+-[no]translucency / -[no]tl    draw translucent vectors                        
+-beam <float>                  set beam width in vector games                  
+-flicker <float>               set flickering in vector games                  
+-intensity <float>             set intensity in vector games                   
+
+*** Mame CORE sound options ***
+-samplerate / -sr <int>        set samplerate                                  
+-[no]samples                   use samples                                     
+-[no]resamplefilter            resample if samplerate does not match           
+-[no]sound                     enable/disable sound and sound CPUs             
+-volume / -vol <int>           volume (range [-32,0])                          
+
+*** Mame CORE misc options ***
+-[no]artwork / -[no]art        use additional game artwork (sets default for   
+                               specific options below)                         
+-[no]use_backdrops /           use backdrop artwork                            
+-[no]backdrop                                                                  
+-[no]use_overlays /            use overlay artwork                             
+-[no]overlay                                                                   
+-[no]use_bezels / -[no]bezel   use bezel artwork                               
+-[no]artwork_crop /            crop artwork to game screen only                
+-[no]artcrop                                                                   
+-artwork_resolution / -artres  artwork resolution (0 for auto)                 
+<int>                                                                          
+-[no]cheat / -[no]c            enable/disable cheat subsystem                  
+-[no]debug / -[no]d            enable/disable debugger (only if available)     
+-playback / -pb <string>       playback an input file                          
+-record / -rec <string>        record an input file                            
+-[no]log                       generate error.log                              
+-maxlogsize <int>              maximum error.log size (in KB)                  
+-[no]oslog                     output error log to debugger                    
+-[no]skip_disclaimer           skip displaying the disclaimer screen           
+-[no]skip_gameinfo             skip displaying the game info screen            
+-[no]crconly                   use only CRC for all integrity checks           
+-bios <string>                 change system bios                              
+-state <string>                state to load                                   
+
+*** Configuration options ***
+-createconfig / -cc            create the default configuration file           
+-showconfig / -sc              display running parameters in rc style          
+-showusage / -su               show this help                                  
+-[no]readconfig / -[no]rc      enable/disable loading of configfiles           
+-[no]verbose / -[no]v          display additional diagnostic information       
